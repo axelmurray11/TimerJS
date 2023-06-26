@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( 90deg, #00d2ff 0%, #3a47d5 100%);
+    font-family: 'roboto', sans-serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.clock{
+    font-size: 32px;
+    text-shadow: -1px 0px 15px rgba(0,0,0,0.25);
+    color: lightgray;
+}
+.number{
+    display: inline-block;
+    width: 140px;
+    font-size: 128px;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    border: none;
+    color: lightgray;
+    background: transparent;
+
+}
+.buttons button{
+    margin: 0 7px;
+    padding: 40px;
+    border:none;
+    border-radius: 50%;
+}
+#play{
+    background-image: url(../img/play.png);
+    background-repeat: no-repeat;
+    background-position:center ;
+}
+#stop{
+    background-image: url(../img/stop.png);
+    background-repeat: no-repeat;
+    background-position:center ;
+}
+#play:active{
+    background-color: lightgreen;
+}
+#stop:active{
+    background-color: lightcoral;
+}
